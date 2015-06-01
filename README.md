@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a simple ruby script that takes an ansible playbook or role as an input, looks for a docker directive in it, then outputs a docker command which can be run in the CLI.
+This is a simple ruby script that takes an ansible playbook or role yaml file as an input, looks for the first task with the docker module in it, then outputs a docker run command.
 
-If you spend a lot of time wondering why your docker directives in ansible don't do what you want this could help you with your debugging. 
+If you spend a lot of time wondering why your docker actions in ansible don't do what you want this could help you with your debugging. 
 
 ## Requirements
 
@@ -68,4 +68,5 @@ To run the rspec tests run:
 ## Future work
 
 * Take docker command as input and output ansible yml. Docker2Ansible if you will.
-* More than one test
+* Be able to deal with more than one docker task.
+* Write more than one test.
