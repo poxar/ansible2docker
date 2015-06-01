@@ -1,4 +1,4 @@
-require_relative '../ansible2docker.rb'
+require_relative '../lib/ansible2docker.rb'
 
 RSpec.describe Ansible2Docker, '#parse_ansible' do
   context 'given this test.yml' do
